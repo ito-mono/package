@@ -7,6 +7,11 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
+
+    permissions:
+      packages: write # GitHub Packagesへの書き込み権限が必要
+      contents: read # リポジトリの内容の読み取り権限が必要
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
