@@ -1,5 +1,5 @@
 {
-  "name": "package",
+  "name": "@ito-mono/package",
   "version": "1.0.0",
   "description": "package",
   "main": "index.js",
