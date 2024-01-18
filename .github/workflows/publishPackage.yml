@@ -2,7 +2,7 @@ name: Publish npm package
 
 on:
   push:
-    branches: ["master"]
+    branches: ["release"]
 
 defaults:
   run:
@@ -24,7 +24,7 @@ jobs:
         with:
           node-version: "20"
           registry-url: https://npm.pkg.github.com
-      - name: Install dependencies
+      - name: Install → ビルドを行うためdevDependenciesもインストールする
         working-directory: dev
         run: npm install
       - name: Build

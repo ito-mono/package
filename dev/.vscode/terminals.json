@@ -1,0 +1,19 @@
+{
+  "autorun": true,
+  "terminals": [
+    {
+      "name": "vite",
+      "description": "vite開発環境",
+      "focus": false,
+      "execute": true,
+      "commands": ["npm run dev"]
+    },
+    {
+      "name": "storybook",
+      "description": "Storybook",
+      "focus": false,
+      "execute": true,
+      "commands": ["npm run sb"]
+    }
+  ]
+}
