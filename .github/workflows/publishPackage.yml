@@ -4,6 +4,10 @@ on:
   push:
     branches: ["master"]
 
+defaults:
+  run:
+    working-directory: .
+
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -20,8 +24,9 @@ jobs:
         with:
           node-version: "20"
           registry-url: https://npm.pkg.github.com
-      # - name: Build
-      #   run: npm run build
+      - name: Build
+        working-directory: dev
+        run: npm run build
       - name: publish npm package
         run: npm publish
         env:
