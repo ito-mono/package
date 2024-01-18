@@ -2,7 +2,7 @@ name: Publish npm package
 
 on:
   push:
-    branches: ["release"]
+    branches: ["master"]
 
 defaults:
   run:
