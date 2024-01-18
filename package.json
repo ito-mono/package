@@ -1,27 +1,18 @@
 {
   "name": "@ito-mono/package",
-  "version": "1.0.0",
-  "description": "package",
-  "main": "index.js",
-  "author": "Toshiki.Ito",
+  "version": "0.0.1",
+  "description": "",
+  "author": "T.Ito",
   "license": "MIT",
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://npm.pkg.github.com/"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ito-mono/package.git"
+    "url": "git+https://github.com/ito-mono/package.git"
   },
+  "main": "index.js",
   "files": [
-    "dist",
-    "README.md"
+    "dist"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
   }
 }
