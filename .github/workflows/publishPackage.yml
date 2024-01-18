@@ -20,8 +20,8 @@ jobs:
         with:
           node-version: "20"
           registry-url: https://npm.pkg.github.com
-      - name: Build
-        run: npm run build
+      # - name: Build
+      #   run: npm run build
       - name: publish npm package
         run: npm publish
         env:
