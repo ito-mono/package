@@ -24,6 +24,9 @@ jobs:
         with:
           node-version: "20"
           registry-url: https://npm.pkg.github.com
+      - name: Install dependencies
+        working-directory: dev
+        run: npm install --omit=dev
       - name: Build
         working-directory: dev
         run: npm run build
